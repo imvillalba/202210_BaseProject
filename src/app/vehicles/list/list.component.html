@@ -1,4 +1,5 @@
 
+<img style="width: 80%" src="assets/header.png">
 <div class="col-6">
   <table class="table">
     <thead class="table-dark">
@@ -19,7 +20,6 @@
     </tbody>
   </table>
   <div *ngFor="let vehicleStats of vehicleTotalized">
-    <p>{{vehicleStats['marca']}}</p>
-    <p>{{vehicleStats['counter']}}</p>
+    <p><span style="font-weight: bold;">{{vehicleStats['marca']}}</span>: <span>{{vehicleStats['counter']}}</span></p>
   </div>
 </div>
