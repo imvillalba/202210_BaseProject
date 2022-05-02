@@ -1,1 +1,25 @@
-<p>list works!</p>
+
+<div class="col-6">
+  <table class="table">
+    <thead class="table-dark">
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Marca</th>
+        <th scope="col">Linea</th>
+        <th scope="col">Modelo</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let vehicle of vehiclesList">
+        <th scope="row">{{vehicle.id}}</th>
+        <td>{{vehicle.marca}}</td>
+        <td>{{vehicle.linea}}</td>
+        <td>{{vehicle.modelo}}</td>
+      </tr>
+    </tbody>
+  </table>
+  <div *ngFor="let vehicleStats of vehicleTotalized">
+    <p>{{vehicleStats['marca']}}</p>
+    <p>{{vehicleStats['counter']}}</p>
+  </div>
+</div>
