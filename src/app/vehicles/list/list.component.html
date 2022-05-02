@@ -1,7 +1,7 @@
 
 <img style="width: 80%" src="assets/header.png">
 <div class="col-6">
-  <table class="table">
+  <table class="table" id="vehicles-table">
     <thead class="table-dark">
       <tr>
         <th scope="col">#</th>
@@ -12,7 +12,7 @@
     </thead>
     <tbody>
       <tr *ngFor="let vehicle of vehiclesList">
-        <th scope="row">{{vehicle.id}}</th>
+        <th id="{{vehicle.id}}" scope="row">{{vehicle.id}}</th>
         <td>{{vehicle.marca}}</td>
         <td>{{vehicle.linea}}</td>
         <td>{{vehicle.modelo}}</td>
